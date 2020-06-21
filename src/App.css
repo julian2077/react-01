@@ -1,0 +1,40 @@
+.app-wrapper {
+  /* margin: 0 auto; */
+  width: 1200px;
+  /* text-align: center; */
+
+  display: grid;
+    
+  grid-template-areas:
+	"he he"
+	"na co";
+
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 5px;
+}
+ 
+img[title="imgContent"] {
+	width: 500px;
+}
+
+.header {
+  grid-area: he;
+  background-color: cadetblue;
+}
+
+.header img {
+  width: 100px;
+}
+
+.nav {
+  grid-area: na;
+  background-color: aquamarine;
+}
+
+.content {
+  /* text-align: center; */
+
+  grid-area: co;
+  background-color: wheat;
+} 
